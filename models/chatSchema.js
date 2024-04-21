@@ -15,6 +15,6 @@ const chatSchema = new Schema({
         type: String,
         required: true
     }
-})
+}, {timestamps: true})
 
 export const Chat = mongoose.model('Chat', chatSchema)
